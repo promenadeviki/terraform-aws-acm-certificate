@@ -1,4 +1,8 @@
-provider "aws" {)
+provider "aws" {
+  region = var.cert_region
+}
+
+
 resource "aws_acm_certificate" "default" {
   provider                  = aws.acm_account
   domain_name               = var.domain_name
