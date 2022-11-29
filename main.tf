@@ -1,3 +1,5 @@
+provider "aws" {}
+
 resource "aws_acm_certificate" "default" {
   provider                  = aws.acm_account
   domain_name               = var.domain_name
