@@ -1,4 +1,6 @@
-provider "aws" {}
+aws = {
+│       source = "hashicorp/aws"
+│     }
 
 resource "aws_acm_certificate" "default" {
   provider                  = aws.acm_account
